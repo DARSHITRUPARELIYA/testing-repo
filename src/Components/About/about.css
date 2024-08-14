@@ -1,0 +1,44 @@
+
+  :root {
+    --primary-color: #3b141c;
+    --secondary-color: #f3961c;
+    --dark-color: #252525;
+    --white-color: #fff;
+    --light-gray-color: #f2f2f2;
+    --site-max-width: 1300px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--white-color);
+}
+
+
+  /* About Us Section */
+.about_us {
+  padding: 60px 20px 120px;
+  background: var(--light-gray-color);
+}
+.about_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.about_container .text_section {
+  max-width: 50%;
+}
+.about_container .text_section p {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: center;
+}
+.about_container .image_section {
+  max-width: 45%;
+}
+.about_container .image_section img {
+  width: 100%;
+}

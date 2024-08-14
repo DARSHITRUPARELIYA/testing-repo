@@ -1,0 +1,105 @@
+
+  :root {
+    --primary-color: #3b141c;
+    --secondary-color: #f3961c;
+    --dark-color: #252525;
+    --white-color: #fff;
+    --light-gray-color: #f2f2f2;
+    --site-max-width: 1300px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--white-color);
+}
+  
+.section_container {
+  margin: 0 auto;
+  max-width: var(--site-max-width);
+}
+.section_title {
+  text-align: center;
+  padding: 10px 0 50px;
+  font-size: 32px;
+  font-family: "Righteous", sans-serif;
+  text-transform: uppercase;
+}
+.section_title::after {
+  content: '';
+  width: 80px;
+  background: var(--secondary-color);
+  height: 5px;
+  display: block;
+  margin: 7px auto 0;
+  border-radius: 8px;
+}
+  .hero_section {
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+.hero_container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    padding-top: 85px;
+    min-height: calc(100vh - 85px);
+    justify-content: space-between;
+}
+.hero_container .text_section h2 {
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+.hero_container .text_section h3 {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--white-color);
+    margin-top: 8px;
+}
+.hero_container .text_section p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--white-color);
+    margin: 24px 0 40px;
+    max-width: 70%;
+}
+.hero_container .hero_section_button {
+    display: flex;
+    gap: 24px;
+}
+.hero_container .hero_section_button .button {
+    padding: 8px 28px;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+.hero_container .hero_section_button .button:last-child {
+    color: var(--white-color);
+    border-color: var(--white-color);
+    background: none;
+}
+.hero_container .hero_section_button .button:first-child:hover {
+    color: var(--white-color);
+    background: transparent;
+    border-color: var(--white-color);
+}
+.hero_container .hero_section_button .button:last-child:hover {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+.hero_container .image_section {
+    max-width: 45%;
+}
+.hero_container .image_section img {
+    width: 100%;
+}
+
+  

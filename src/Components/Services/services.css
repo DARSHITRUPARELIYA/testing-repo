@@ -1,0 +1,45 @@
+:root {
+    --primary-color: #3b141c;
+    --secondary-color: #f3961c;
+    --dark-color: #252525;
+    --white-color: #fff;
+    --light-gray-color: #f2f2f2;
+    --site-max-width: 1300px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--white-color);
+}
+
+/* Services Section */
+.services {
+    background: var(--dark-color);
+    color: var(--white-color);
+    padding: 60px 20px 120px;
+}
+.services .service_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section_container .services_items img {
+    width: 100%;
+}
+.section_container .services_items {
+    width: calc(100% / 3 - 120px);
+}
+.services_items .services_text {
+    text-align: center;
+}
+.services_items .services_text h3 {
+    margin: 12px 0;
+    font-weight: 600;
+    font-size: 24px;
+}
+.services_items .services_text p {
+    font-size: 17px;
+}
